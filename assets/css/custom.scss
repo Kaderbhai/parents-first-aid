@@ -1,0 +1,292 @@
+//Colours
+$colour1:rgb(35, 197, 95);
+$colour2:rgb(165, 91, 166);
+$colour3:rgb(181, 247, 255);
+$colour4:rgb(152, 178, 195);
+$colour5:rgb(245, 243, 232);
+$colour6:#337ab7;
+
+
+$colourFont:rgb(120,120,120);
+
+//fonts
+$font1:'Droid Sans', sans-serif; $font2:'Indie Flower', cursive;;
+
+//Backgrounds
+$background:bg-color, bg-image position, bg-size, bg-repeat;
+$background1:url("../img/happy-kids.jpg") no-repeat;
+$background2:white url("../img/baby-shoes-1.png") -10px -20px  no-repeat;
+$background3:url("../img/mum-daughter-grey.png") 0px -110px no-repeat;
+$background4:url("../img/dad-son.png") 0px -20px no-repeat;
+$textBackground:rgba(255,255,255,0.7);
+
+//Mixin
+@mixin linearGradient($gradient...){
+	background: linear-gradient($gradient); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient($gradient); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($gradient); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($gradient); /* For Firefox 3.6 to 15 */
+}
+ 
+//padding
+$padding:20px 0 20px 0;
+
+/* ==== GENERAL ==== */
+body {
+	font-family:$font1;
+	font-size:16px;
+	color:$colourFont;
+	line-height:1.6;
+}
+
+section {
+	margin:10px 0 10px 0;
+	padding:20px 0 20px 0;
+}
+
+/* ==== GLOBAL ==== */
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	color:$colour1;
+	line-height:1.6;
+}
+
+h1,h2,h3 {
+	padding:$padding;
+}
+
+hr {
+	background-color:$colour2;
+	height:1px;
+}
+
+.textBackground {
+	background:$textBackground;
+}
+
+#button-con {
+	padding:$padding;
+}
+
+.badge.social {
+	background: $colour2;
+	font-size:24px;
+	height:40px;
+	width:40px;
+	text-align: center;
+	line-height:42px;
+	margin: 0 5px 20px 0;
+	padding:0;
+	-webkit-border-radius:50px;
+	-moz-border-radius:50px;
+	border-radius: 50px;
+	color:white;
+}
+
+.badge.social.twitter:hover {
+	transition:fade-in, 1s ;
+	background:#55acee;
+	
+}
+
+.badge.social.facebook:hover {
+	transition:fade-in, 1s ;
+	background:#3b5998;
+	
+}
+.badge.social.gplus:hover {
+	transition:fade-in, 1s ;
+	background:#db4b39;
+	
+}
+
+button {
+	a:hover{
+		text-decoration:none;
+	}
+}
+
+.btn-info {
+	background-color:$colour3 !important;
+}
+
+.glyph1 {
+	background:white url("../img/kid icons/svg/boy-4.svg");
+}
+
+.glyph2 {
+	background:white url("../img/kid icons/svg/girl-4.svg");
+}
+
+.glyph3 {
+	background:white url("../img/kid icons/svg/boy-11.svg");
+}
+
+.glyph4 {
+	background:white url("../img/kid icons/svg/girl-6.svg");
+}
+	
+/* ==== LOGO SOCIAL MEDIA LINKS  ==== */
+#logo-header-con {
+	margin:0;
+	@include linearGradient($colour3, $colour5);
+	
+	.container {
+		display:table;
+		
+		.col-sm-6 {
+			display: table-cell;
+			vertical-align:middle;
+		}
+	}
+}
+
+/* ==== NAV ==== */
+.navbar-brand>img {
+    display: inline !important;
+}
+
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+	
+	li {
+		float: none;
+		display: inline-block;
+	}
+	
+	.active>a {
+		background:transparent !important;
+		font-weight:bold;
+	}
+}
+
+.navbar-default {
+	background-color:white!important; 
+	border-color: white!important;
+	
+	a {
+		color:$colour2 !important;
+		font-size:1.3em;
+	}
+	
+	a:hover {
+		color:$colour2;
+		opacity:0.6;
+	}
+}
+
+.navbar {
+	margin-bottom:0 !important;
+}
+  
+/* ==== HEADER-CAROSEL ==== */
+#header-img {
+	background: $background1;
+	background-size:cover;
+	background-position: center;
+	
+	.col-sm-4 {
+		height: 600px;
+	}
+
+	p {
+		padding:$padding;
+	}
+	
+	h2 {
+		margin-bottom:0;
+		padding-bottom:0;
+	}
+	
+	hr {
+		margin-top:0;
+		width:75%;
+		height:2px;
+	}
+}
+
+
+
+/* ==== INTRO ==== */
+#intro-pic {
+	background:$background2;
+	background-size: 700px 500px;
+	
+	h2 {
+		margin-bottom:10px;
+		padding-bottom:10px;
+	}
+	
+	hr {
+		margin-top:0;
+		width:75%;
+		height:2px;
+	}
+	
+	p {
+		padding:$padding;
+	}
+}
+.group-option {
+	padding:10px 0 10px 0;
+	display:table;
+
+}
+
+.options {
+	font-size:65px;
+	height:100px;
+	width:100px;
+
+	border-radius:50%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;	
+	color:white;
+}
+
+.option-text {
+	text-align:left;
+}
+
+/* ==== FAQ SECTION ==== */
+#FAQ-section {
+	background:$background4;
+	background-attachment: fixed;
+	background-size:cover;
+	background-position: center;
+	
+	.col-sm-8 {
+		border-radius:10px;
+		background:$textBackground;	
+	}
+}
+
+/* ==== LINKS ==== */ 
+#links {
+	.col-sm-6 {
+		padding:$padding;
+	}
+}
+
+/* ==== FOOTER ==== */
+footer {
+	font-size:12px;
+	
+	#footer-info {
+		height:300px;
+		@include linearGradient($colour3, $colour5);
+		margin:0;
+		padding-bottom:0;
+	}
+	
+	#footer-author {
+		background-color:$colour5;
+		margin:0;
+		padding:0;
+	}
+}
+
+/* ==== MEDIA QUERIES ==== */
+

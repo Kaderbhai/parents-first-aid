@@ -1,0 +1,247 @@
+/* ==== GENERAL ==== */
+body {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  color: #787878;
+  line-height: 1.6;
+}
+
+section {
+  margin: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
+}
+
+/* ==== GLOBAL ==== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #23c55f;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  padding: 20px 0 20px 0;
+}
+
+hr {
+  background-color: #a55ba6;
+  height: 1px;
+}
+
+.textBackground {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#button-con {
+  padding: 20px 0 20px 0;
+}
+
+.badge.social {
+  background: #a55ba6;
+  font-size: 24px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 5px 20px 0;
+  padding: 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  color: white;
+}
+
+.badge.social.twitter:hover {
+  transition: fade-in, 1s;
+  background: #55acee;
+}
+
+.badge.social.facebook:hover {
+  transition: fade-in, 1s;
+  background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+  transition: fade-in, 1s;
+  background: #db4b39;
+}
+
+button a:hover {
+  text-decoration: none;
+}
+
+.btn-info {
+  background-color: #b5f7ff !important;
+}
+
+.glyph1 {
+  background: white url("../img/kid icons/svg/boy-4.svg");
+}
+
+.glyph2 {
+  background: white url("../img/kid icons/svg/girl-4.svg");
+}
+
+.glyph3 {
+  background: white url("../img/kid icons/svg/boy-11.svg");
+}
+
+.glyph4 {
+  background: white url("../img/kid icons/svg/girl-6.svg");
+}
+
+/* ==== LOGO SOCIAL MEDIA LINKS  ==== */
+#logo-header-con {
+  margin: 0;
+  background: linear-gradient(#b5f7ff, #f5f3e8);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#b5f7ff, #f5f3e8);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#b5f7ff, #f5f3e8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#b5f7ff, #f5f3e8);
+  /* For Firefox 3.6 to 15 */
+}
+#logo-header-con .container {
+  display: table;
+}
+#logo-header-con .container .col-sm-6 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* ==== NAV ==== */
+.navbar-brand > img {
+  display: inline !important;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+.navbar-nav .active > a {
+  background: transparent !important;
+  font-weight: bold;
+}
+
+.navbar-default {
+  background-color: white !important;
+  border-color: white !important;
+}
+.navbar-default a {
+  color: #a55ba6 !important;
+  font-size: 1.3em;
+}
+.navbar-default a:hover {
+  color: #a55ba6;
+  opacity: 0.6;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+/* ==== HEADER-CAROSEL ==== */
+#header-img {
+  background: url("../img/happy-kids.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#header-img .col-sm-4 {
+  height: 600px;
+}
+#header-img p {
+  padding: 20px 0 20px 0;
+}
+#header-img h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#header-img hr {
+  margin-top: 0;
+  width: 75%;
+  height: 2px;
+}
+
+/* ==== INTRO ==== */
+#intro-pic {
+  background: white url("../img/baby-shoes-1.png") -10px -20px no-repeat;
+  background-size: 700px 500px;
+}
+#intro-pic h2 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#intro-pic hr {
+  margin-top: 0;
+  width: 75%;
+  height: 2px;
+}
+#intro-pic p {
+  padding: 20px 0 20px 0;
+}
+
+.group-option {
+  padding: 10px 0 10px 0;
+  display: table;
+}
+
+.options {
+  font-size: 65px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.option-text {
+  text-align: left;
+}
+
+/* ==== FAQ SECTION ==== */
+#FAQ-section {
+  background: url("../img/dad-son.png") 0px -20px no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+#FAQ-section .col-sm-8 {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* ==== LINKS ==== */
+#links .col-sm-6 {
+  padding: 20px 0 20px 0;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  font-size: 12px;
+}
+footer #footer-info {
+  height: 300px;
+  background: linear-gradient(#b5f7ff, #f5f3e8);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#b5f7ff, #f5f3e8);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#b5f7ff, #f5f3e8);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#b5f7ff, #f5f3e8);
+  /* For Firefox 3.6 to 15 */
+  margin: 0;
+  padding-bottom: 0;
+}
+footer #footer-author {
+  background-color: #f5f3e8;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== MEDIA QUERIES ==== */
